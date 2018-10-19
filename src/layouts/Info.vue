@@ -24,7 +24,7 @@
 
 
 <script>
-import links from '@/data/doc-links.yaml'
+import links from '@/data/info-links.yaml'
 
 export default {
   computed: {
