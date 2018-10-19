@@ -1,0 +1,32 @@
+.text-center {
+  text-align: center;
+}
+
+.no-wrap {
+  white-space:no-wrap;
+  flex-wrap: no-wrap;
+  display: inline-block;
+}
+
+.mb {
+  margin-bottom: var(--space-x2)!important;
+}
+
+.ml {
+  margin-left: 10px!important;
+}
+
+
+.show-for-small {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .hide-for-small {
+    display: none!important;
+  }
+
+  .show-for-small {
+    display: inherit;
+  }
+}

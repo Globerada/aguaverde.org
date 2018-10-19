@@ -1,0 +1,23 @@
+html, body {
+  background-color: #fff;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+img,
+svg {
+  vertical-align: middle;
+  with: 100%;
+  max-width: 100%;
+}
+
+hr {
+  opacity: .3;
+}
+
+::selection { background: var(--border-color); }

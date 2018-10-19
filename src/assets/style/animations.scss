@@ -1,0 +1,102 @@
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--primary-color);
+  }
+  70% {
+    box-shadow: 0 0 0 10px transparent;
+
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+
+  }
+}
+
+@keyframes pulseAlt {
+  0% {
+    box-shadow: 0 0 0 0 #E535AB;
+  }
+  70% {
+    box-shadow: 0 0 0 10px transparent;
+
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(10px)
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-up {
+  animation: fadeUp .8s;
+
+}
+
+
+@keyframes stroke {
+  to{stroke-dashoffset:-20;}
+}
+
+
+
+.rotate-enter-active {
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.rotate-leave-active {
+  transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
+}
+
+.rotate-enter-to {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.rotate-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.rotate-leave-active{
+  left:0;
+  right:0;
+  position: absolute;
+}
+
+
+.rotate-x-enter-active {
+  transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
+  transform: translateX(50px);
+  opacity: 0;
+}
+
+.rotate-x-leave-active {
+  transition: all .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);  
+}
+
+.rotate-x-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.rotate-x-leave-to {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.rotate-x-leave-active{
+  left:0;
+  right:0;
+  position: absolute;
+}
