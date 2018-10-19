@@ -1,7 +1,7 @@
 {
   "private": true,
   "version": "1.0.0",
-  "name": "gridsome.org",
+  "name": "aguaverde.org",
   "scripts": {
     "develop": "gridsome develop",
     "explore": "gridsome explore",

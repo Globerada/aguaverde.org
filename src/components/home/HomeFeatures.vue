@@ -17,8 +17,8 @@
       </Feature>
 
       <Feature>
-        <h3>Todas las disciplinas</h3>
-        <p>Desde triatlones sprint hasta IronMan, pasando por duatlones, competiciones de atletismo, travesías de natación o marchas cicloturistas. Será rara la prueba en la que no veas a algún aguaverde en la línea de salida.
+        <h3>Mucho más que triatlón</h3>
+        <p>Desde triatlones sprint hasta IronMan, pasando por duatlones, competiciones de atletismo, travesías de natación o marchas cicloturistas. Será rara la prueba en la que no veas a algún aguaverde en la línea de salida
         </p>     
       </Feature>
 
@@ -39,7 +39,7 @@
 
 
       <Feature>
-        <h3>Cuota mínima</h3>
+        <h3>Cuota básica</h3>
         <p>No somos un club que venda servicios a los socios. Sólo ofrecemos los servicios propios de un entrenamiento al mejor precio posible y sin ánimo de lucro 
         </p>     
       </Feature>
