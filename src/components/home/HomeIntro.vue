@@ -2,29 +2,29 @@
   <Section :dots="false" class="text-center section--background">
   <div class="container-md mb">
     
-    <h1 class="home-title">
-      <span class="home-title__top">Triatlón Aguaverde</span>
+    <div class="home-title">
+      <h1 class="home-title__top">Triatlón Aguaverde</h1>
       <transition name="rotate">
-        <h2 v-if="currentText == 0" class="home-title__main gradient-text" key="0">
+        <div v-if="currentText == 0" class="home-title__main gradient-text" key="0">
           Barato y cómodo
-        </h2>
-        <h2 v-else-if="currentText == 1" key="1" class="home-title__main gradient-text">
+        </div>
+        <div v-else-if="currentText == 1" key="1" class="home-title__main gradient-text">
           Sin compromisos
-        </h2>
-        <h2 v-else-if="currentText == 2" key="2" class="home-title__main gradient-text">
+        </div>
+        <div v-else-if="currentText == 2" key="2" class="home-title__main gradient-text">
           Todos los niveles
-        </h2>
-        <h2 v-else-if="currentText == 3" key="3" class="home-title__main gradient-text">
+        </div>
+        <div v-else-if="currentText == 3" key="3" class="home-title__main gradient-text">
           Grupo de chicas
-        </h2>
-        <h2 v-else-if="currentText == 5" key="5" class="home-title__main gradient-text">
+        </div>
+        <div v-else-if="currentText == 5" key="5" class="home-title__main gradient-text">
           Piscina
-        </h2>
-        <h2 v-else-if="currentText == 4" key="4" class="home-title__main gradient-text">
+        </div>
+        <div v-else-if="currentText == 4" key="4" class="home-title__main gradient-text">
          Entrenamientos
-        </h2>
+        </div>
       </transition>
-    </h1>
+    </div>
 
     <p class="home-intro container-sm">
       Descubre las ventajas de entrenar con nosotros
@@ -64,8 +64,11 @@ export default {
 
 <style lang="scss">
 .home-title {
+  font-size: 2rem;
+  font-weight: bold;
   &__top {
     font-size: 75%;
+    margin-bottom: 0;
   }
   &__main {
     font-size: 130%;
