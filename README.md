@@ -1,6 +1,6 @@
 <p align="center">
   <br>
-  <a href="https://www.aguaverde.org">
+  <a href="http://www.aguaverde.org">
     <img src="http://www.aguaverde.org/foro/images/logosAguaverde/eusebia_3D.png" width="90"/>
   </a>
 </p>
@@ -21,4 +21,4 @@ Desde triatlones sprint hasta IronMan, pasando por duatlones, competiciones de a
 
 ### Conoce más
 
-Vista la web para leer más sobre nosotros
+Visita [nuestra web](http://www.aguaverde.org) y [foro](http://www.aguaverde.org/foro) para leer más sobre nosotros
