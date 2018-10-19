@@ -25,7 +25,6 @@
 
 <script>
 import links from '@/data/info-links.yaml'
-console.log(links)
 export default {
   computed: {
     links () {
