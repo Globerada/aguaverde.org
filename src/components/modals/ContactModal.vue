@@ -29,11 +29,6 @@ export default {
   },
   components: {
     AppModal
-  },
-  methods: {
-    signIn () {
-      this.$modal.hide('signin')
-    }
   }
 }
 </script>
