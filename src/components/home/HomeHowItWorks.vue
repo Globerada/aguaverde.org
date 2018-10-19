@@ -3,8 +3,6 @@
       <h2 class="text-center">
         ¿Qué te aporta el Aguaverde?
       </h2>
-
-
       <div class="source-animation flex flex--align-equal flex--space-between">
           <div class="well">
               <div class="well__title">Entrenamientos</div>
