@@ -1,9 +1,9 @@
 module.exports = {
   siteName: 'Triatlón Aguaverde',
-  siteUrl: `http://www.aguaverde.org/`,
+  siteUrl: `https://elated-rosalind-79d1be.netlify.com/`,
   titleTemplate: '%s - Madrid',
   siteDescription: 'Triatlón en Madrid con el Club Triatlón Aguaverde',
-  pathPrefix: '/new',
+  // pathPrefix: '/new',
 
   plugins: [
     '@gridsome/plugin-critical',
