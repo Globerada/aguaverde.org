@@ -4,7 +4,6 @@
     <home-sponsors />
     <home-testimonials />
     <home-features />
-    <home-how-it-works />   
     <home-blog />
   </Layout>
 </template>
