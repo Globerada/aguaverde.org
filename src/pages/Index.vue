@@ -4,6 +4,7 @@
     <home-sponsors />
     <home-testimonials />
     <home-features />
+    <home-carousel />
     <home-how-it-works />   
     <home-blog />
   </Layout>
@@ -17,6 +18,7 @@ import HomeBlog from '@/components/home/HomeBlog.vue'
 import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'
 import HomeSponsors from '@/components/home/HomeSponsors'
 import HomeTestimonials from '@/components/home/HomeTestimonials'
+import HomeCarousel from '@/components/home/HomeCarousel'
 
 
 export default {
@@ -26,7 +28,8 @@ export default {
     HomeBlog,
     HomeHowItWorks,
     HomeSponsors,
-    HomeTestimonials
+    HomeTestimonials,
+    HomeCarousel
   },
 
 

@@ -1,7 +1,7 @@
 <template>
   <div id="sponsors">
     <div class="inner">
-      <h3>Patrocinadores</h3>
+      <h2>Patrocinadores</h2>
         <a v-for="sponsor in sponsors" :key="sponsor.name" :href="campaignUrl(sponsor.url)" target="_blank" style="width: 160px;">
           <img :src="sponsor.logo" :alt="sponsor.name">
         </a>        

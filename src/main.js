@@ -18,6 +18,22 @@ import 'typeface-nunito'
 import VueAnalytics from 'vue-analytics'
 import Typography from 'typography'
 
+const Modal = { 
+  install (Vue) {
+    this.event = new Vue()
+    Vue.prototype.$modal = {
+      show (modal, params = {}) {
+        Modal.event.$emit('show', modal, params)
+      },
+      hide (modal) {
+        Modal.event.$emit('hide', modal)
+      },
+      $event: this.event
+    }    
+  }
+}
+
+
 const typography = new Typography({
   baseFontSize: '18px',
   baseLineHeight: 1.666,
@@ -37,6 +53,7 @@ export default function (Vue, { head, router, isServer }) {
   Vue.component('Eusebia', Eusebia)
 
   Vue.use(VueScrollTo)
+  Vue.use(Modal)
 /*
   Vue.use(VueAnalytics, {
     id: 'UA-127625720-1',

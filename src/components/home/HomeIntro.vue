@@ -66,6 +66,9 @@ export default {
 .home-title {
   font-size: 2rem;
   font-weight: bold;
+  font-family: 'League Spartan',sans-serif;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;  
   &__top {
     font-size: 75%;
     margin-bottom: 0;
