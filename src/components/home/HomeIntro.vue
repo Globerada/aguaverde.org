@@ -26,9 +26,9 @@
       </transition>
     </div>
 
-    <p class="home-intro container-sm">
-      Descubre las ventajas de entrenar con nosotros
-    </p>
+    <h2 class="home-intro container-sm">
+      Tu club de triatlón en Madrid
+    </h2>
 
     <g-link to="/info" class="button">
       Hazte socio
