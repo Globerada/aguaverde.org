@@ -33,7 +33,7 @@ export default {
         {
           name: 'Pablo García Traba',
           avatar: 'https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/264710_4369701721493_428191146_n.jpg?_nc_cat=107&oh=7aaaa43ebd29d571521312b83656229d&oe=5C43C747',
-          description: 'La filosofía del club encaja con mi forma de ser, y así intento transmitirlo en la cancha. Ser globero no implica causalidad',
+          description: 'La filosofía del club encaja con mi forma de ser y así intento transmitirlo en la cancha. ¡Triatlón como filosofía de vida!',
           social: {
               twitter: '',
               facebook: ''
