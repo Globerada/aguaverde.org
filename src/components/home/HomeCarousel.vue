@@ -7,11 +7,11 @@
           :per-page="1"
           :min-swipe-distance="48"
           :pagination-enabled="true"
-          :pagination-padding="12"
+          :pagination-padding="5"
           pagination-active-color="#f8188e"
           pagination-color="#c9c9c9"
           :pagination-size="8"
-          :navigation-enabled="true"
+          :navigation-enabled="false"
           ref="carousel"
         >
           <!-- TODO. Refactor slides when gridsome supports <g-image> with dynamic src https://gridsome.org/docs/image -->
@@ -59,6 +59,7 @@ export default {
 .VueCarousel {
   img {
     border-radius: 10px;
+    margin-bottom: 0;
     /* box-shadow: 2px 8px 5px 5px rgba(0, 0, 0, 0.2); */
   }
 }
