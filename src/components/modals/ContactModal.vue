@@ -9,7 +9,7 @@
                 Aguaverde
               </div>
           </div>
-          <p class="home-intro container-sm">Escríbenos a <a target="_blank" :href="mailTo">{{ mail }}</a></p>      
+          <p class="home-intro container-sm">Escríbenos a <a target="_blank" :href="mailHref()">{{ mail }}</a></p>      
           <p class="home-intro container-sm">O manda un WhatsApp al 
             <a target="_blank" :href="whatsAppLink('Quiero info del Aguaverde')">{{ beautifulPhone(phone) }}</a>
           </p>      
@@ -40,7 +40,7 @@ export default {
     beautifulPhone(phone){
       return phone.toString().replace(/(.{3})/g,"$1 ")
     },
-    mailTo() {
+    mailHref() {
       return `mailto:${this.mail}`
     }
   },
