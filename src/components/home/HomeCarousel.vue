@@ -30,11 +30,11 @@
 </template>
 
 <script>
-import { Carousel, Slide } from 'vue-carousel'
+
 export default {
   components: {
-    Carousel,
-    Slide,
+    Carousel: () => import('vue-carousel').then(({ Carousel }) => Carousel),
+    Slide: () => import('vue-carousel').then(({ Slide }) => Slide)
   },
   data() {
     return {
@@ -42,7 +42,7 @@ export default {
     }
   },
   mounted() {
-    this.showCarousel = true
+    this.showCarousel = true   
   }
 }
 
