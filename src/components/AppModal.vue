@@ -103,6 +103,9 @@ export default {
 
 .app-modal-inner--image {
   padding: 0;
+  img {
+    margin-bottom: 0;
+  }  
 }
 
 .modal-enter-active, .modal-leave-active {

@@ -18,9 +18,4 @@ export default {
 </script>
 
 <style lang="scss">
-.app-modal-inner--image {
-  img {
-    margin-bottom: 0;
-  }
-}
 </style>
