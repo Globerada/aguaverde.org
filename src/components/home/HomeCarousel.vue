@@ -59,7 +59,7 @@ export default {
 .VueCarousel {
   img {
     border-radius: 10px;
-    box-shadow: 2px 8px 5px 5px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 2px 8px 5px 5px rgba(0, 0, 0, 0.2); */
   }
 }
 </style>
