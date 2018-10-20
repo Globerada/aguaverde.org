@@ -92,6 +92,7 @@ export default {
   width: 90%;
   max-width: 500px;
   z-index:999;
+  border-radius: 8px;
 }
 .modal-enter-active, .modal-leave-active {
   transition: all 200ms;

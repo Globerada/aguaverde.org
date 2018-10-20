@@ -9,9 +9,10 @@
                 Aguaverde
               </div>
           </div>
-          <p class="home-intro container-sm">Escríbenos a <a target="_blank" href="mailto:triatlon@aguaverde.org">triatlon@aguaverde.org</a></p>      
+          <p class="home-intro container-sm">Escríbenos a <a target="_blank" :href="mailTo">{{ mail }}</a></p>      
           <p class="home-intro container-sm">O manda un WhatsApp al 
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=34696923004&text=Hola%20quiero%20info%20Aguaverde">696 923 004</a></p>      
+            <a target="_blank" :href="whatsAppLink('Quiero info del Aguaverde')">{{ beautifulPhone(phone) }}</a>
+          </p>      
         </div>
       </template>
     </AppModal>
@@ -20,15 +21,32 @@
 
 <script>
 import AppModal from '../AppModal'
+import contact from '@/data/contact-aguaverde.yaml'
+
 export default {
-  data () {
-    return {
-      social: [        
-      ]
+  data() {
+    return  {     
+      phone: '',
+      mail: ''
     }
   },
   components: {
     AppModal
+  },
+  methods: {
+    whatsAppLink(subject) {      
+      return `https://api.whatsapp.com/send?phone=34${this.phone}&text=${encodeURI(subject)}`
+    },
+    beautifulPhone(phone){
+      return phone.toString().replace(/(.{3})/g,"$1 ")
+    },
+    mailTo() {
+      return `mailto:${this.mail}`
+    }
+  },
+  mounted() {
+    this.phone = contact.phone
+    this.mail = contact.mail
   }
 }
 </script>
