@@ -2,7 +2,7 @@
   <div id="sponsors">
     <div class="inner">
       <h2>Patrocinadores</h2>
-        <a v-for="sponsor in sponsors" :key="sponsor.name" :href="campaignUrl(sponsor.url)" target="_blank" style="width: 160px;">
+        <a v-for="sponsor in sponsors" :key="sponsor.name" :href="campaignUrl(sponsor.url)" target="_blank" style="width: 140px;">
           <img :src="sponsor.logo" :alt="sponsor.name">
         </a>        
     </div>
@@ -43,7 +43,7 @@ export default {
 <style lang="scss">
 #sponsors {
   text-align: center;
-  padding: 35px 40px 45px;
+  padding: 35px 40px 15px;
   background-color: #f6f6f6;
 }
 
@@ -54,7 +54,7 @@ export default {
 }
 
 #sponsors a {
-    margin: 20px 15px 0;
+    margin: 0px 15px 0;
     position: relative;
 }
 
