@@ -3,8 +3,8 @@
     <div v-if="visible">
       <div class="app-modal" @click.prevent="$modal.hide(name)"></div>
       <div class="app-modal-inner" :class="{'app-modal-inner--image' : image}">
-        <a href="#" @click.prevent="$modal.hide(name)">
-          <svg class="app-modal__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" width="100%" height="100%"> <line x1="18" y1="6" x2="6" y2="18"></line> <line x1="6" y1="6" x2="18" y2="18"></line> </svg>
+        <a href="#" @click.prevent="$modal.hide(name)" class="app-modal__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="100%" height="100%"> <line x1="18" y1="6" x2="6" y2="18"></line> <line x1="6" y1="6" x2="18" y2="18"></line> </svg>
         </a>
         <slot name="body" :params="params"/>
       </div>    
@@ -43,9 +43,11 @@ export default {
   },
   beforeMount () {
     this.$modal.$event.$on('show', (modal, params) => {
+      
       if (this.name !== modal) { 
         return 
-      }
+      }      
+
       this.params = params
 
       if (!this.$listeners['before-open']) {
@@ -111,8 +113,8 @@ export default {
 }
 .app-modal__icon {
   position: absolute;
-  top: -15px;
-  right: -15px;
+  top: 25px;
+  right: 25px;
   color: #000;
   display: inline-block !important;
   width: 32px;

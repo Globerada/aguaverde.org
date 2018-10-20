@@ -7,8 +7,7 @@
     <home-carousel />
     <home-how-it-works />   
     <home-blog />
-    <image-modal />
-    <contact-modal />
+    <image-modal />    
   </Layout>
 </template>
 
@@ -21,7 +20,6 @@ import HomeHowItWorks from '@/components/home/HomeHowItWorks.vue'
 import HomeSponsors from '@/components/home/HomeSponsors'
 import HomeTestimonials from '@/components/home/HomeTestimonials'
 import HomeCarousel from '@/components/home/HomeCarousel'
-import ContactModal from '@/components/modals/ContactModal'
 import ImageModal from '@/components/modals/ImageModal'
 
 
@@ -34,8 +32,7 @@ export default {
     HomeSponsors,
     HomeTestimonials,
     HomeCarousel,
-    ImageModal,
-    ContactModal
+    ImageModal
   },
 
 
