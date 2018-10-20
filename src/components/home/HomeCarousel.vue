@@ -14,31 +14,37 @@
           :navigation-enabled="true"
           ref="carousel"
         >
-          <Slide><g-image width="760" src="~/assets/images/carousel/1.jpg" /></Slide>
-          <Slide><g-image width="760" src="~/assets/images/carousel/2.jpg" /></Slide>
-          <Slide><g-image width="760" src="~/assets/images/carousel/3.jpg" /></Slide>
-          <Slide><g-image width="760" src="~/assets/images/carousel/4.jpg" /></Slide>
-          <Slide><g-image width="760" src="~/assets/images/carousel/5.jpg" /></Slide>
-          <Slide><g-image width="760" src="~/assets/images/carousel/6.jpg" /></Slide>
-          <Slide><g-image width="760" src="~/assets/images/carousel/7.jpg" /></Slide>
-          <Slide><g-image width="760" src="~/assets/images/carousel/8.jpg" /></Slide>
-          <Slide><g-image width="760" src="~/assets/images/carousel/9.jpg" /></Slide>
+          <!-- TODO. Refactor slides when gridsome supports <g-image> with dynamic src https://gridsome.org/docs/image -->
+          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/1.jpg" /></Slide>
+          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/2.jpg" /></Slide>
+          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/3.jpg" /></Slide>
+          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/4.jpg" /></Slide>
+          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/5.jpg" /></Slide>
+          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/6.jpg" /></Slide>
+          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/7.jpg" /></Slide>
+          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/8.jpg" /></Slide>
+          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/9.jpg" /></Slide>
         </Carousel>
       </div>
-    </div>
+    </div>    
   </Section>
 </template>
 
 <script>
 
 export default {
-  components: {
+  components: {    
     Carousel: () => import('vue-carousel').then(({ Carousel }) => Carousel),
     Slide: () => import('vue-carousel').then(({ Slide }) => Slide)
   },
   data() {
     return {
       showCarousel : false
+    }
+  },
+  methods: {
+    modalImage(e) {
+      this.$modal.show('image', {image: e.target.src})
     }
   },
   mounted() {
