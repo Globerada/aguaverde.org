@@ -4,6 +4,7 @@
     <main>
       <slot />
     </main>
+    <contact-modal />
     <Footer v-if="footer !== false" />
   </div>
 </template>
@@ -11,12 +12,14 @@
 <script>
 import Header from './partials/Header'
 import Footer from './partials/Footer'
+import ContactModal from '@/components/modals/ContactModal'
 
 export default {
   props: ['footer'],
   components: {
     Header,
-    Footer
+    Footer,
+    ContactModal
   }
 }
 </script>
