@@ -38,9 +38,53 @@ export default {
     titleTemplate: '%s',
     meta: [
       {
+        name: 'viewport', 
+        content: 'width=device-width, initial-scale=1'
+      },      
+      {
         name: 'description',
         content: 'El club de triatlón con más buen rollo de toda España ✅ Entrenamientos triatlón Madrid. Haz clic aquí para...'
-      }
+      },
+      { 
+        property: 'og:title', 
+        content: 'Club Triatlón Aguaverde' 
+      },
+      { 
+        property: 'og:site_name', 
+        content: 'Club Triatlón Aguaverde' 
+      },      
+	    { 
+        property: 'og:type', 
+        content: 'website' 
+      },
+	    { 
+        property: 'og:url', 
+        content: 'http://www.aguaverde.org' 
+      },
+      { 
+        property: 'og:locale', 
+        content: 'es_ES' 
+      },
+	    { 
+        property: 'og:description', 
+        content:  'El club de triatlón con más buen rollo de toda España ✅ Entrenamientos triatlón Madrid. Haz clic aquí para...' 
+      },
+	    { 
+        name: 'twitter:card', 
+        content: 'summary' 
+      },
+	    { 
+        name: 'twitter:site', 
+        content: '@triaguaverde' 
+      },
+	    { 
+        name: 'twitter:title', 
+        content: 'Club Triatlón Aguaverde' 
+      },      
+	    { 
+        name: 'twitter:creator', 
+        content: '@triaguaverde' 
+      }   
     ]
   }
 }
