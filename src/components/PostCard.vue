@@ -1,7 +1,10 @@
 <template>
   <Card class="blog-posts__post">
+    <div v-if="post.fields.thumbnail" class="thumb-wrapper">
+      <img :src="post.fields.thumbnail" />
+    </div>    
     <h3 v-html="post.title"/>
-    <PostMeta :post="post"/>
+    <PostMeta :post="post" />
     <p v-html="post.fields.excerpt"/>
     <g-link class="blog-posts__post-link" :to="post.path">
       Leer más
@@ -45,5 +48,9 @@ export default {
       z-index: 0;
     }
   }
+}
+.thumb-wrapper {
+  float: right;
+  width: 150px;  
 }
 </style>

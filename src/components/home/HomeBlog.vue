@@ -33,6 +33,7 @@ query BlogPosts {
         fields {
           author
           excerpt
+          thumbnail
         }
       }
     }

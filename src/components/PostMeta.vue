@@ -1,6 +1,6 @@
-<template>
-  <p>
-    <small>
+<template>  
+  <small>
+    <p>
       <template v-if="post.fields && post.fields.author">
         Publicado {{ post.date }} por
         <a href="#">{{ post.fields.author }}</a>
@@ -10,14 +10,22 @@
       <template v-if="post.timeToRead">
         <strong>{{ post.timeToRead }} minuto{{ post.timeToRead > 1 ? 's' : '' }} de lectura</strong>
       </template>
-    </small>
-  </p>
+    </p> 
+  </small>  
 </template>
 
 <script>
 export default {
   props: {
-    post: { type: Object, required: true }
+    post: { 
+      type: Object, 
+      required: true 
+    }
   }
 }
 </script>
+
+<style>
+
+</style>
+
