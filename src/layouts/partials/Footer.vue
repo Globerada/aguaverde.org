@@ -11,6 +11,10 @@ footer {
   font-size: .75rem;
   background-color: var(--primary-bg);
   padding: 20px;
+
+  @media screen and (max-width: 750px) {
+      padding-bottom: 90px;
+  }
 }
 </style>
 
