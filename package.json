@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "gridsome": "^0.2.0",
+    "netlify-identity-widget": "^1.4.14",
     "typeface-league-spartan": "0.0.44",
     "typeface-nunito": "0.0.54",
     "typography": "^0.16.17",
