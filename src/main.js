@@ -17,7 +17,7 @@ import 'typeface-nunito'
 
 import VueAnalytics from 'vue-analytics'
 import Typography from 'typography'
-import 'netlify-identity-widget'
+// import 'netlify-identity-widget'
 
 const Modal = { 
   install (Vue) {

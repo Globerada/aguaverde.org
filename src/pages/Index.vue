@@ -36,7 +36,7 @@ export default {
   },
 
   created() {
-    if(typeof window !== 'undefined'){
+    if(false && typeof window !== 'undefined'){
       // NetlifyCMS https://www.netlifycms.org/docs/add-to-your-site/
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
