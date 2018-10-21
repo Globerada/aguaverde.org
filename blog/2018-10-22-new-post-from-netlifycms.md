@@ -1,10 +1,12 @@
 ---
 layout: blog
-title: New post from NetlifyCMS
+title: ¡Enhorabuena campeones!
 date: 2018-10-21T22:18:58.148Z
-thumbnail: /images/uploads/alonsocera.png
-rating: '3'
+thumbnail: /images/uploads/ican-gandia-aguaverde.png
+rating: '4'
 author: Manu
-excerpt: Texto de resumen
+excerpt: El Ican Gandía ha sido un éxito para la expedición Aguaverde
 ---
-Yo que se tio xd
+Felicidades a todos nuestros socios que han participado hoy en el **Ican Gandía**. Toda la semana con el miedo de la lluvia y gracias a la perseverancia y buen hacer de los organizadores, ha sido una prueba de 10.
+
+Enhorabuena a Mario Somoza por su primer puesto en el short y a Ana Díaz segunda posición en sub23 distancia sprint.
