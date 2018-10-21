@@ -5,8 +5,8 @@
     <div class="home-title">
       <h1 class="home-title__top">Triatlón Aguaverde</h1>
       <transition name="rotate">
-        <div v-if="currentText == 0" class="home-title__main gradient-text" key="0">
-          Cuota muy asequible
+        <div v-if="currentText == 0" key="0" class="home-title__main gradient-text">
+          Más que triatlón
         </div>
         <div v-else-if="currentText == 1" key="1" class="home-title__main gradient-text">
           Sin compromisos
