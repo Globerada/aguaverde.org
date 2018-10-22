@@ -8,6 +8,7 @@
           :min-swipe-distance="48"
           :pagination-enabled="true"
           :pagination-padding="5"
+          :autoplay = true
           pagination-active-color="#f8188e"
           pagination-color="#c9c9c9"
           :pagination-size="8"
