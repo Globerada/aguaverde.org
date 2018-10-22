@@ -24,7 +24,7 @@ export default {
         {
           name: 'José Antonio Fanego',
           avatar: 'https://i.imgur.com/6FbzTmK.png',
-          description: 'Estoy muy contento y motivado de pertener a Aguaverde. Cada semana intento que mis compañeros amen un poco más este deporte',
+          description: 'Estoy muy contento y motivado de pertenecer a Aguaverde. Cada semana intento que mis compañeros amen un poco más este deporte',
           social: {
               twitter: '',
               facebook: ''
