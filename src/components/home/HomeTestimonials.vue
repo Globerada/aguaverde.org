@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 #testimonials {
     background: linear-gradient(180deg,#edf3ff 400px,#4f48ad 0,#4f48ad 60%,#2c2678);
     padding: calc(2.5% + var(--space)) 0;
@@ -66,30 +66,24 @@ export default {
     margin-left: auto;
     margin-right: auto;
 }
-
-.container{
-    width:100%
-}
-@media(min-width:576px){
-    .container{
+/**
+* http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
+* http://sass-lang.com/documentation/file.SASS_REFERENCE.html#media
+*/
+#testimonials .container{
+    width:100%;
+    @media(min-width:576px){
         max-width:576px
     }
-}
-@media(min-width:768px){
-    .container{
+    @media(min-width:768px){
         max-width:768px
     }
-}
-@media(min-width:992px){
-    .container{
+    @media(min-width:992px){
         max-width:992px
     }
-}
-@media(min-width:1250px){    
-    .container{
-        max-width:1250px
+    @media(min-width:1250px){    
+        max-width:1250px    
     }
-   
 }
 
 @media(min-width:992px){ 

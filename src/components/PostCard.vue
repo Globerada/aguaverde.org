@@ -1,9 +1,9 @@
 <template>
   <Card class="blog-posts__post">
+    <h3 v-html="post.title"/>
     <div v-if="post.fields.thumbnail" class="thumb-wrapper">
       <img :src="post.fields.thumbnail" />
     </div>    
-    <h3 v-html="post.title"/>
     <PostMeta :post="post" />
     <p v-html="post.fields.excerpt"/>
     <g-link class="blog-posts__post-link" :to="post.path">
@@ -50,7 +50,8 @@ export default {
   }
 }
 .thumb-wrapper {
-  float: right;
-  width: 150px;  
+  width: 350px;
+  text-align: center;
+  margin: auto;
 }
 </style>
