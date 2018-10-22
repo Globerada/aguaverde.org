@@ -11,6 +11,6 @@ Federarte te dará la oportunidad de participar en competiciones por equipos que
 
 Los precios de las licencias son públicos y dependen de las Federaciones Territoriales. 
 
-Lo que sí hacemos desde el club es tramitar de forma gratuita y online a los socios la licencia en la Federación Madrileña Triatlón.
+Lo que sí hacemos desde el club es tramitar de forma gratuita y online a los socios la licencia en la Federación Madrileña Triatlón. Recuerda que **federarse a través de un club tiene descuento en el precio**.
 
 ![logo Federación Madrileña Triatlón](http://www.triatlonmadrid.org/img/logo-triatlon-madrid.png)
