@@ -50,7 +50,7 @@ export default {
   }
 }
 .thumb-wrapper {
-  width: 350px;
+  max-width: 350px;
   text-align: center;
   margin: auto;
 }
