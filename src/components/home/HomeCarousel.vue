@@ -9,6 +9,8 @@
           :pagination-enabled="true"
           :pagination-padding="5"
           :autoplay = true
+          :autoplay-timeout = 5000
+          :loop = true
           pagination-active-color="#f8188e"
           pagination-color="#c9c9c9"
           :pagination-size="8"
