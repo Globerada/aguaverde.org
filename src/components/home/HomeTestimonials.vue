@@ -3,7 +3,7 @@
     <section class="container text-center">
       <h2>¿Qué opinan nuestros entrenadores?</h2>
       <div class="flex flex--align-equal flex--space-between flex--lg-no-wrap">
-        <div v-for="testimonial in testimonials" :key="testimonial.name" class="testimonial-card w-full lg:max-w-24">
+        <div v-for="testimonial in testimonials" :key="testimonial.name" class="testimonial-card">
             <img :src="testimonial.avatar" 
               :alt="testimonial.name" :title="testimonial.name" />
             <h3 :title="testimonial.name" class="title">{{ testimonial.name }}</h3>
@@ -86,11 +86,6 @@ export default {
     }
 }
 
-@media(min-width:992px){ 
-    .lg\:max-w-24{
-        max-width:24rem
-    }    
-}
 
 .testimonial-card {
     background-color: #fff;
@@ -106,6 +101,9 @@ export default {
     padding-left: 1rem;
     padding-right: 2rem;
     text-align: center;
+    @media(min-width:992px){ 
+        max-width:24rem;  
+    }    
 }
 .testimonial-card>.title {
     color: #5e527f;
