@@ -2,7 +2,7 @@
   <Card class="blog-posts__post">
     <h3 v-html="post.title"/>
     <div v-if="post.fields.thumbnail" class="thumb-wrapper">
-      <img :src="post.fields.thumbnail" />
+      <img :src="post.fields.thumbnail.src" />
     </div>    
     <PostMeta :post="post" />
     <p v-html="post.fields.excerpt"/>
@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import PostMeta from './PostMeta.vue'
+import PostMeta from "./PostMeta.vue";
 
 export default {
   components: {
@@ -22,7 +22,7 @@ export default {
   props: {
     post: { type: Object, required: true }
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -30,7 +30,7 @@ export default {
   &__post {
     position: relative;
     margin-bottom: 2rem;
-  
+
     a:not(.blog-posts__post-link) {
       position: relative;
       z-index: 1;
@@ -42,7 +42,7 @@ export default {
       left: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.0;
+      opacity: 0;
       overflow: hidden;
       text-indent: -9999px;
       z-index: 0;

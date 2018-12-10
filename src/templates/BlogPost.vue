@@ -3,11 +3,19 @@
     <Section class="post" container="md" dots="true" >
       <h1 v-html="$page.post.title"/>
       <div v-if="$page.post.fields.thumbnail" class="post__image">
-        <img :src="$page.post.fields.thumbnail" />
+        <img :src="$page.post.fields.thumbnail.src" />
       </div>
       <PostMeta :post="$page.post"/>
       <p class="lead" v-html="$page.post.fields.excerpt"/>
       <div v-html="$page.post.content"/>
+      <hr/>
+      <div>
+        <h2>¡Anímate y deja un comentario!</h2>
+        <vue-disqus
+          :title="$page.post.title"
+          shortname="aguaverde"
+        /> 
+      </div>
     </Section>
   </Layout>
 </template>

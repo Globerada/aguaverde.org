@@ -14,43 +14,51 @@
             <a target="_blank" :href="whatsAppLink('Quiero info del Aguaverde')">{{ beautifulPhone(phone) }}</a>
           </p>      
         </div>
+        <hr/>
+        <h3>Deja un comentario</h3>
+        <vue-disqus
+          title="Contacto"
+          shortname="aguaverde"
+          identifier="modal-contact"
+        /> 
       </template>
     </AppModal>
   </div>
 </template>
 
 <script>
-import AppModal from '../AppModal'
-import contact from '@/data/contact-aguaverde.yaml'
+import AppModal from "../AppModal";
+import contact from "@/data/contact-aguaverde.yaml";
 
 export default {
   data() {
-    return  {     
-      phone: '',
-      mail: ''
-    }
+    return {
+      phone: "",
+      mail: ""
+    };
   },
   components: {
     AppModal
   },
   methods: {
-    whatsAppLink(subject) {      
-      return `https://api.whatsapp.com/send?phone=34${this.phone}&text=${encodeURI(subject)}`
+    whatsAppLink(subject) {
+      return `https://api.whatsapp.com/send?phone=34${
+        this.phone
+      }&text=${encodeURI(subject)}`;
     },
-    beautifulPhone(phone){
-      return phone.toString().replace(/(.{3})/g,"$1 ")
+    beautifulPhone(phone) {
+      return phone.toString().replace(/(.{3})/g, "$1 ");
     },
     mailHref() {
-      return `mailto:${this.mail}`
+      return `mailto:${this.mail}`;
     }
   },
   mounted() {
-    this.phone = contact.phone
-    this.mail = contact.mail
+    this.phone = contact.phone;
+    this.mail = contact.mail;
   }
-}
+};
 </script>
 
 <style>
-
 </style>
