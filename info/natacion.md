@@ -1,26 +1,49 @@
 # ¿Dónde nadáis?
---------------
 
-Solo nadamos juntos los socios que estamos integrados en el grupo de piscina. La piscina que nos cede el Ayuntamiento de Madrid por medio de un acuerdo es la Instalación Marqués de Samaranch, que se encuentra en el Paseo Imperial 18, Madrid.
+El Club Triatlón Aguaverde ha llegado a un acuerdo con el Ayuntamiento de Madrid por el que nos cede el uso de varias calles en la piscina del Marqués de Samaranch. Esta piscina se encuentra en el Paseo Imperial número 18 de Madrid.
 
-![natación triatlón aguaverde](http://www.aguaverde.org/wp-content/uploads/2018/02/WhatsApp-Image-2017-09-03-at-18.18.16-1024x576.jpeg)
+![natacion en piscina marques de samaranch](./images/piscina.jpg)
 
 ## Días de entrenamiento
-Los días de entrenamiento son los lunes, martes, jueves y viernes, desde las 21:00 a 23:00 horas. 
+
+Los días de entrenamiento son los lunes, martes, jueves y viernes, desde las 21:00 a 23:00 horas.
 
 ## Entrenador
-El encargado de dirigir los entrenos a pie de piscina durante los lunes y jueves es **Augusto García Zapico**. El resto de días seguimos la planificación que Augusto elabora. 
+
+El encargado de dirigir los entrenos a pie de piscina durante los lunes y jueves es **Augusto García Zapico**. El resto de días seguimos la planificación que Augusto elabora.
+
+![augusto garcia zapico](./images/zapico.jpg)
 
 ## Turnos
-Actualmente tenemos dos grupos de natación con un total de unos 50 socios. El primer turno comienza de 21:00 y el segundo a las 22:00h.
+
+Actualmente tenemos dos grupos de natación con un total de unos 50 socios. El primer turno comienza a las 21:00h y el segundo a las 22:00h.
 
 ## Temporada
 
 La temporada de entrenos comienza el 15 septiembre y finaliza el 30 agosto (durante agosto la instalación Marqués de Samaranch se encuentra cerrada).
 
-## Escríbenos
+Todos los entrenos se cuelgan en el foro la semana anterior por si algún día tienes que entrenar por tu cuenta.
 
-Si te interesa la ubicación de la instalación, días y horarios de la piscina, envíanos un correo a través de la pestaña “Contacto” para informarte de precios y grupos de entrenamiento. Para que te orientes, el precio para el grupo de 21:00-23:00 es de 280€/año y de 22:00-23:00 de 230€/año.
+Además de las correcciones de estilo del entrenador, en Aguaverde también hacemos videos de técnica y grabaciones subacuáticas de nuestros triatletas.
+
+## Disponibilidad de plazas y precio
+
+¡Anímate! Aún quedan **plazas disponibles** para la temporada 2018/2019.
+
+El precio para la temporada completa en el grupo de 21:00-23:00 es de 280€/año y de 22:00-23:00 de 230€/año. A lo largo de la temporada se van abriendo nuevos plazos de inscripción para cubrir las plazas vacantes. Si estás interesado, consultadnos para conocer los precios y fechas disponibles.
+
+Te recordamos que es necesario ser socio del Club Triatlón Aguaverde para disfrutar del uso de la piscina.
+
+## Aguas abiertas
+
+Durante el período de Junio a Septiembre solemos ir a entrenar al Lago de Boadilla una vez a la semana.
 
 ## Club de triatletas
-Por favor, no contactes con nosotros si tu intención es solo nadar, ya que es un club de triatlón, y para la natación encontrarás mejores lugares donde entrenar y desarrollar tus habilidades (clubes de natación, cursos del ayuntamiento, etc).
+
+Aguaverde es un **club de triatlón** y nuestros entrenamientos de natación están orientados a preparar las pruebas que se nadan en este deporte.
+
+No es recomendable que te apuntes con nosotros si tu intención es únicamente prácticar la natación.
+
+## Escríbenos
+
+Si te interesa, envíanos un correo a través de la pestaña “Contacto” para informarte de plazas y grupos de entrenamiento.

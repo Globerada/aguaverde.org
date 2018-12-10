@@ -6,10 +6,12 @@
       link: /info/natacion
     - title: ¿Dónde corréis?
       link: /info/correr
+    - title: Entrenadores
+      link: /info/entrenadores
     - title: El foro
       link: /info/foro
 
-- title : Hazte socio
+- title: Hazte socio
   items:
     - title: Requisitos
       link: /info/requisitos
