@@ -1,18 +1,16 @@
-<h1 align="center"> ¿Quiénes son nuestros entrenadores? </h1>
+# ¿Quiénes son nuestros entrenadores?
 
-<h2 align="center">MARIANO PEÑACOBA ORTIZ</h2>
+## MARIANO PEÑACOBA ORTIZ
 
 ![penacoba](./images/penacoba.jpg)
 
-![madtraining](./images/madtraining.jpg)
-
-Mariano es el **entrenador principal** del Club Triatlon Aguaverde. Aporta su experiencia profesional tanto en clubes de triatlon como entrenador personal.
+Mariano es el **entrenador principal** del Club Triatlón Aguaverde. Aporta su experiencia profesional tanto en clubes de triatlon como entrenador personal.
 
 - Graduado en Ciencias de la Actividad Física y el Deporte
 - Es entrenador por la Federación Española de Triatlon, nivel 3
 - Es entrenador personal en la empresa MAD TRAINING
 
-<h2 align="center">JOSÉ ANTONIO FANEGO SÁNCHEZ</h2>
+## JOSÉ ANTONIO FANEGO SÁNCHEZ
 
 ![jose antonio fanego sanchez](./images/fanego.jpg)
 
@@ -21,7 +19,7 @@ Fanego es el **responsable de entrenamientos de distancia sprint y olímpica** d
 - Entrenador por la Federación Española de Triatlon, nivel 2
 - Especialista en nutrición y larga distancia por la FETRI
 
-<h2 align="center">PABLO GARCIA TRABA</h2>
+## PABLO GARCIA TRABA
 
 ![pablo garcia traba](./images/loko.jpg)
 
@@ -30,7 +28,7 @@ Pablo es el **responsable de entrenamientos de media y larga distancia** del Clu
 - Entrenador por la Federación Madrileña de Triatlon, nivel 1
 - Entrenador certificado IronMan y Training Peaks
 
-<h2 align="center">AUGUSTO G. ZAPICO</h2>
+## AUGUSTO G. ZAPICO
 
 ![augusto garcia zapico](./images/zapico.jpg)
 

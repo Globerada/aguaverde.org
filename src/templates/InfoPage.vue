@@ -18,12 +18,21 @@ query InfoPage ($path: String!) {
 
 <script>
 export default {
-  metaInfo () {
-    const { title } = this.$page.info
+  metaInfo() {
+    const { title } = this.$page.info;
 
     return {
-      title: title.length ? title[0].value : undefined
+      title: title.length ? title[0].value : ""
+    };
+  },
+  mounted() {
+    if (typeof window !== "undefined") {
+      const images = document.querySelectorAll(".g-image");
+      images.forEach(image => {
+        image.parentNode.style.textAlign = "center";
+      });
     }
   }
-}
+};
 </script>
+

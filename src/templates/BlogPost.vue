@@ -29,24 +29,15 @@ query BlogPost ($path: String!) {
 </page-query>
 
 <script>
-import PostMeta from '@/components/PostMeta.vue'
+import PostMeta from "@/components/PostMeta.vue";
+import headArticle from "@/mixins/headArticle";
 
 export default {
   components: {
     PostMeta
   },
-  metaInfo () {
-    return {
-      title: this.$page.post.title,
-      meta: [
-        {
-          name: 'description',
-          content: this.$page.post.fields.excerpt
-        }
-      ]
-    }
-  }
-}
+  mixins: [headArticle]
+};
 </script>
 <style>
 .post__image {
@@ -55,6 +46,6 @@ export default {
   text-align: center;
   max-width: 500px;
   width: 100%;
-  height: auto;  
+  height: auto;
 }
 </style>

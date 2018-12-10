@@ -1,37 +1,31 @@
 module.exports = {
-  siteName: 'Triatlón Aguaverde',
+  siteName: "Triatlón Aguaverde",
   siteUrl: `https://elated-rosalind-79d1be.netlify.com/`,
-  titleTemplate: '%s - Madrid',
-  siteDescription: 'Triatlón en Madrid con el Club Triatlón Aguaverde',
+  titleTemplate: "%s - Madrid",
+  siteDescription: "Triatlón en Madrid con el Club Triatlón Aguaverde",
   // pathPrefix: '/new',
 
   plugins: [
-    '@gridsome/plugin-critical',
+    "@gridsome/plugin-critical",
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        type: 'page',
-        index: ['README'],
-        path: 'info/**/*.md',
-        typeName: 'Info',
+        index: ["README"],
+        path: "info/**/*.md",
+        typeName: "InfoPage",
         remark: {
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
+          plugins: ["@gridsome/remark-prismjs"]
         }
       }
     },
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        type: 'post',
-        path: 'blog/*.md',
-        route: '/blog/:slug+',
-        typeName: 'Blog',
+        path: "blog/*.md",
+        route: "/blog/:slug+",
+        typeName: "BlogPost",
         remark: {
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
+          plugins: ["@gridsome/remark-prismjs"]
         }
       }
     }
