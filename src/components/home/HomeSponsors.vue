@@ -2,7 +2,7 @@
   <div id="sponsors">
     <div class="inner">
       <h2>Patrocinadores</h2>
-        <a v-for="sponsor in sponsors" :key="sponsor.name" :href="campaignUrl(sponsor.url)" target="_blank" style="width: 140px;">
+        <a v-for="sponsor in sponsors" :key="sponsor.name" :href="campaignUrl(sponsor.url)" target="_blank" rel="noopener" style="width: 140px;">
           <img :src="sponsor.logo" :alt="sponsor.name">
         </a>        
     </div>
