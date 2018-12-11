@@ -10,21 +10,26 @@
 </template>
 
 <script>
-import Header from './partials/Header'
-import Footer from './partials/Footer'
-import ContactModal from '@/components/modals/ContactModal'
+import Header from "./partials/Header";
+import Footer from "./partials/Footer";
+import ContactModal from "@/components/modals/ContactModal";
 
 export default {
-  props: ['footer'],
+  props: ["footer"],
   components: {
     Header,
     Footer,
     ContactModal
+  },
+  data() {
+    return {
+      modalOpen: false
+    };
   }
-}
+};
 </script>
 
-<style>
+<style lang="scss">
 #app {
   display: flex;
   flex-direction: column;

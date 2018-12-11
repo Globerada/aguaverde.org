@@ -14,13 +14,6 @@
             <a target="_blank" :href="whatsAppLink('Quiero info del Aguaverde')">{{ beautifulPhone(phone) }}</a>
           </p>      
         </div>
-        <hr/>
-        <h3>Deja un comentario</h3>
-        <vue-disqus
-          title="Contacto"
-          shortname="aguaverde"
-          identifier="modal-contact"
-        /> 
       </template>
     </AppModal>
   </div>

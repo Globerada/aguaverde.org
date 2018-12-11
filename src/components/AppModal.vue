@@ -18,7 +18,7 @@ export default {
     return {
       params: {},
       visible: false
-    }
+    };
   },
   props: {
     name: {
@@ -28,65 +28,76 @@ export default {
     image: {
       required: false,
       type: Boolean
+    },
+    preventBackgroundScrolling: {
+      default: true,
+      type: Boolean
     }
   },
   methods: {
-    setVisible () {
-      this.visible = true
+    setVisible() {
+      this.visible = true;
     },
-    setHidden () {
-      this.visible = false
+    setHidden() {
+      this.visible = false;
     },
     closeModalOnEscKey(e) {
-      if (this.visible && e.keyCode === 27) this.setHidden()
-    },    
+      if (this.visible && e.keyCode === 27) this.setHidden();
+    }
   },
-  beforeMount () {
-    this.$modal.$event.$on('show', (modal, params) => {
-      
-      if (this.name !== modal) { 
-        return 
-      }      
-
-      this.params = params
-
-      if (!this.$listeners['before-open']) {
-        this.setVisible()
-        return
+  beforeMount() {
+    this.$modal.$event.$on("show", (modal, params) => {
+      if (this.preventBackgroundScrolling) {
+        document.body.style.setProperty("overflow", "hidden");
+        document.body.style.setProperty("max-height", "100vh");
+      }
+      if (this.name !== modal) {
+        return;
       }
 
-      this.$emit('before-open', () => {          
-        this.setVisible()
-      })     
-    })
-    this.$modal.$event.$on('hide', (modal) => {
+      this.params = params;
+
+      if (!this.$listeners["before-open"]) {
+        this.setVisible();
+        return;
+      }
+
+      this.$emit("before-open", () => {
+        this.setVisible();
+      });
+    });
+    this.$modal.$event.$on("hide", modal => {
+      if (this.preventBackgroundScrolling) {
+        document.body.style.removeProperty("overflow");
+        document.body.style.removeProperty("max-height");
+      }
       if (this.name === modal) {
-        this.setHidden()
+        this.setHidden();
       }
-    })    
+    });
   },
   mounted() {
-    document.addEventListener('keydown', this.closeModalOnEscKey)
+    document.addEventListener("keydown", this.closeModalOnEscKey);
   },
   beforeDestroy() {
-    document.removeEventListener('keydown', this.closeModalOnEscKey)
+    document.removeEventListener("keydown", this.closeModalOnEscKey);
   }
-}
+};
 </script>
 
 <style lang="scss">
 .app-modal {
-  background-color: rgba(0,0,0,.6);
-  -webkit-transition: opacity .4s ease;
-  transition: opacity .4s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
   cursor: pointer;
-  overflow-y: scroll;
+  overflow-y: hidden;
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  z-index:999;
+  z-index: 999;
 }
 .app-modal-inner {
   position: fixed;
@@ -97,7 +108,7 @@ export default {
   padding: 30px;
   width: 90%;
   max-width: 500px;
-  z-index:999;
+  z-index: 999;
   border-radius: 8px;
 }
 
@@ -105,14 +116,16 @@ export default {
   padding: 0;
   img {
     margin-bottom: 0;
-  }  
+  }
 }
 
-.modal-enter-active, .modal-leave-active {
+.modal-enter-active,
+.modal-leave-active {
   transition: all 200ms;
 }
-.modal-enter, .modal-leave-active {
-  opacity: 0;
+.modal-enter,
+.modal-leave-active {
+  opacity: 1;
 }
 .app-modal__icon {
   position: absolute;
@@ -128,5 +141,4 @@ export default {
     transform: scale(1.2);
   }
 }
-
 </style>

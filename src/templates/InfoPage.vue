@@ -25,13 +25,22 @@ export default {
       title: title.length ? title[0].value : ""
     };
   },
-  mounted() {
-    if (typeof window !== "undefined") {
-      const images = document.querySelectorAll(".g-image");
-      images.forEach(image => {
-        image.parentNode.style.textAlign = "center";
-      });
+  methods: {
+    alignGridSomeImages() {
+      if (typeof window !== "undefined") {
+        const images = document.querySelectorAll(".g-image");
+        images.forEach(image => {
+          image.parentNode.style.textAlign = "center";
+        });
+      }
     }
+  },
+  beforeRouteUpdate(to, from, next) {
+    this.alignGridSomeImages();
+    next();
+  },
+  mounted() {
+    this.alignGridSomeImages();
   }
 };
 </script>
