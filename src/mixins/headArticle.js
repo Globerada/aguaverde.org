@@ -3,7 +3,7 @@ export default {
     const title = this.$page.post.title
     const description =
       this.$page.post.fields.excerpt || this.$page.post.title || ""
-    const image = this.$page.post.fields.thumbnail || ""
+    const image = this.$page.post.fields.thumbnail.src || ""
     const meta = [
       {
         hid: "description",
