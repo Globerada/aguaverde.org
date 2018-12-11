@@ -17,16 +17,9 @@
           :navigation-enabled="false"
           ref="carousel"
         >
-          <!-- TODO. Refactor slides when gridsome supports <g-image> with dynamic src https://gridsome.org/docs/image -->
-          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/1.jpg" /></Slide>
-          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/2.jpg" /></Slide>
-          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/3.jpg" /></Slide>
-          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/4.jpg" /></Slide>
-          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/5.jpg" /></Slide>
-          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/6.jpg" /></Slide>
-          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/7.jpg" /></Slide>
-          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/8.jpg" /></Slide>
-          <Slide><g-image @click="modalImage" width="760" src="~/assets/images/carousel/9.jpg" /></Slide>
+          <Slide v-for="n in 9" :key="n">
+            <g-image :immediate="false" @click="modalImage" width="760" :src="require(`~/assets/images/carousel/${n}.jpg`)" />
+          </Slide>      
         </Carousel>
       </div>
     </div>    
@@ -34,27 +27,25 @@
 </template>
 
 <script>
-
 export default {
-  components: {    
-    Carousel: () => import('vue-carousel').then(({ Carousel }) => Carousel),
-    Slide: () => import('vue-carousel').then(({ Slide }) => Slide)
+  components: {
+    Carousel: () => import("vue-carousel").then(({ Carousel }) => Carousel),
+    Slide: () => import("vue-carousel").then(({ Slide }) => Slide)
   },
   data() {
     return {
-      showCarousel : false
-    }
+      showCarousel: false
+    };
   },
   methods: {
     modalImage(e) {
-      this.$modal.show('image', {image: e.target.src})
+      this.$modal.show("image", { image: e.target.src });
     }
   },
   mounted() {
-    this.showCarousel = true   
+    this.showCarousel = true;
   }
-}
-
+};
 </script>
 
 

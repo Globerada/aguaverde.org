@@ -4,7 +4,7 @@
       <h2>¿Qué opinan nuestros entrenadores?</h2>
       <div class="flex flex--align-equal flex--space-between flex--lg-no-wrap">
         <div v-for="testimonial in testimonials" :key="testimonial.name" class="testimonial-card">
-            <img :src="testimonial.avatar" 
+            <g-image :src="testimonial.avatar" 
               :alt="testimonial.name" :title="testimonial.name" />
             <h3 :title="testimonial.name" class="title">{{ testimonial.name }}</h3>
             <p>
@@ -23,7 +23,7 @@ export default {
       testimonials: [
         {
           name: "José Antonio Fanego",
-          avatar: "https://i.imgur.com/6FbzTmK.png",
+          avatar: require("~/assets/images/testimonial_fanego.png"),
           description:
             "Estoy muy contento y motivado de pertenecer a Aguaverde. Cada semana intento que mis compañeros amen un poco más este deporte",
           social: {
@@ -33,8 +33,7 @@ export default {
         },
         {
           name: "Pablo García Traba",
-          avatar:
-            "https://scontent-mad1-1.xx.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/264710_4369701721493_428191146_n.jpg?_nc_cat=107&oh=7aaaa43ebd29d571521312b83656229d&oe=5C43C747",
+          avatar: require("~/assets/images/testimonial_garcia_traba.jpg"),
           description:
             "La filosofía del club encaja con mi forma de ser y así intento transmitirlo en la cancha. ¡Triatlón como filosofía de vida!",
           social: {
@@ -59,26 +58,22 @@ export default {
   );
   padding: calc(2.5% + var(--space)) 0;
 }
-
 #testimonials .flex > *:last-child {
   margin-bottom: 90px;
   margin-top: 90px;
 }
-
 @media (max-width: 992px) {
   #testimonials .flex > *:last-child {
     margin: 0;
   }
 }
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
-/**
+/* *
 * http://thesassway.com/intermediate/responsive-web-design-in-sass-using-media-queries-in-sass-32
-* http://sass-lang.com/documentation/file.SASS_REFERENCE.html#media
-*/
+* http://sass-lang.com/documentation/file.SASS_REFERENCE.html#media */
 #testimonials .container {
   width: 100%;
   @media (min-width: 576px) {
@@ -94,16 +89,13 @@ export default {
     max-width: 1250px;
   }
 }
-
 .testimonial-card {
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.11),
     0 5px 15px 0 rgba(0, 0, 0, 0.08);
-  /*
-    display: flex;
-    flex-wrap: wrap;
-    */
+  /* display: flex;
+    flex-wrap: wrap; */
   margin-bottom: 5rem;
   margin-top: 5rem;
   padding-bottom: 1rem;

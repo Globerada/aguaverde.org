@@ -47,28 +47,28 @@ export default {
   data() {
     return {
       currentText: 0
-    }
+    };
   },
 
-  mounted () {
+  mounted() {
     this._counter = setInterval(() => {
-      this.currentText = (this.currentText + 1) % 6
-    }, 3500)
+      this.currentText = (this.currentText + 1) % 6;
+    }, 3500);
   },
 
-  destroyed () {
-    clearTimeout(this._counter)
-  },
-}
+  destroyed() {
+    clearTimeout(this._counter);
+  }
+};
 </script>
 
 <style lang="scss">
 .home-title {
   font-size: 2rem;
   font-weight: bold;
-  font-family: 'League Spartan',sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-weight: bold;
-  text-rendering: optimizeLegibility;  
+  text-rendering: optimizeLegibility;
   &__top {
     font-size: 75%;
     margin-bottom: 0;
@@ -87,16 +87,14 @@ export default {
   }
 }
 
-
 .home-intro {
   font-size: 130%;
 }
 
 .section--background {
-    background-image: url(https://i.imgur.com/ahkxocT.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;  
+  background-image: url(https://i.imgur.com/ahkxocT.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
-
 </style>

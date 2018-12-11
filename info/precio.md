@@ -17,7 +17,7 @@ A continuación se describen en detalle qué servicios se ofrecen con cada una d
 - Múltiples descuentos en material deportivo y tiendas especializadas.
 - Acudir con un gran equipo a eventos, viajes, concentraciones…
 
-## CUOTA SIMPATIZANTE (35€)
+## CUOTA BÁSICA (35€)
 
 - Participar en los entrenamientos conjuntos que se organizan específicamente para socios.
 - Tramitación de inscripciones a pruebas señaladas por el club y posibilidad de tramitar la licencia federativa a través del club. (\*\*)

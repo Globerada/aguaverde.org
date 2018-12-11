@@ -15,29 +15,31 @@ export default {
     return {
       sponsors: [
         {
-          name: 'Globerada',
-          url: 'https://www.globerada.com/',
-          logo: 'https://i.imgur.com/3jOgoNv.png'
-        },        
+          name: "Globerada",
+          url: "https://www.globerada.com/",
+          logo: require("~/assets/images/logos/logo_globerada_ajustado.png")
+        },
         {
-          name: 'Althea Fisioterapia',
-          url: 'https://altheafisioterapia.com/',
-          logo: 'https://i.imgur.com/tvp5GWi.png'
-        },       
+          name: "Althea Fisioterapia",
+          url: "https://altheafisioterapia.com/",
+          logo: require("~/assets/images/logos/logo_althea.png")
+        },
         {
-          name: 'Neovantas',
-          url: 'http://www.neovantas.com/home/',
-          logo: 'https://i.imgur.com/cjLSUBX.png'
-        },                
+          name: "Neovantas",
+          url: "http://www.neovantas.com/home/",
+          logo: require("~/assets/images/logos/logo_neovantas.png")
+        }
       ]
-    }
+    };
   },
   methods: {
     campaignUrl(url) {
-      return url + '?utm_source=aguaverde.org&utm_medium=web&utm_campaign=sponsor'
+      return (
+        url + "?utm_source=aguaverde.org&utm_medium=web&utm_campaign=sponsor"
+      );
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -47,31 +49,28 @@ export default {
   background-color: #f6f6f6;
 }
 
-#sponsors
-  .inner {
-    max-width: 700px;
-    margin: 0px auto;
+#sponsors .inner {
+  max-width: 700px;
+  margin: 0px auto;
 }
 
 #sponsors a {
-    margin: 0px 15px 0;
-    position: relative;
+  margin: 0px 15px 0;
+  position: relative;
 }
 
-#sponsors 
-  img {
-    transition: all 0.3s ease;
-    filter: grayscale(100%);
-    opacity: 0.66;
-    width: 100px;
-    display: inline-block;
-    vertical-align: middle;
-    width: 150px;
-    height: 50px;
-    &:hover {
-      filter: none;
-      opacity: 1;      
-    }
+#sponsors img {
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+  opacity: 0.66;
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  height: 50px;
+  &:hover {
+    filter: none;
+    opacity: 1;
   }
-
+}
 </style>

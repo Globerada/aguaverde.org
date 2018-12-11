@@ -2,7 +2,7 @@
   <Card class="blog-posts__post">
     <h3 v-html="post.title"/>
     <div v-if="post.fields.thumbnail" class="thumb-wrapper">
-      <img :src="post.fields.thumbnail.src" />
+      <g-image :src="post.fields.thumbnail.src" />
     </div>    
     <PostMeta :post="post" />
     <p v-html="post.fields.excerpt"/>
