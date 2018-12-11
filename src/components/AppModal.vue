@@ -47,12 +47,14 @@ export default {
   },
   beforeMount() {
     this.$modal.$event.$on("show", (modal, params) => {
+      // we can have several modals. Don't fire all at same time
+      if (this.name !== modal) {
+        return;
+      }
+
       if (this.preventBackgroundScrolling) {
         document.body.style.setProperty("overflow", "hidden");
         document.body.style.setProperty("max-height", "100vh");
-      }
-      if (this.name !== modal) {
-        return;
       }
 
       this.params = params;
@@ -67,12 +69,12 @@ export default {
       });
     });
     this.$modal.$event.$on("hide", modal => {
-      if (this.preventBackgroundScrolling) {
-        document.body.style.removeProperty("overflow");
-        document.body.style.removeProperty("max-height");
-      }
       if (this.name === modal) {
         this.setHidden();
+        if (this.preventBackgroundScrolling) {
+          document.body.style.removeProperty("overflow");
+          document.body.style.removeProperty("max-height");
+        }
       }
     });
   },

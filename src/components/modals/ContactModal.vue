@@ -1,6 +1,6 @@
 <template>
   <div>
-    <AppModal name="contact">
+    <AppModal name="contact" :prevent-background-scrolling="true">
       <template slot="body" slot-scope="{ params }">
         <div class="container-md mb">
           <div class="home-title">
