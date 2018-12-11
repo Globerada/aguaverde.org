@@ -92,7 +92,7 @@ export default {
 }
 
 .section--background {
-  background-image: url(https://i.imgur.com/ahkxocT.jpg);
+  background-image: url("../../assets/images/background_white.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
