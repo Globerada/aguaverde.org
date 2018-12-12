@@ -1,6 +1,6 @@
 <template>
   <InfoLayout>
-    <div class="post mb" v-html="$page.info.content"></div>
+    <div class="post" v-html="$page.info.content"></div>
   </InfoLayout>
 </template>
 
@@ -25,6 +25,13 @@ export default {
       title: title.length ? title[0].value : ""
     };
   },
+  watch: {
+    $route(to, from) {
+      this.$nextTick(() => {
+        this.alignGridSomeImages();
+      });
+    }
+  },
   methods: {
     alignGridSomeImages() {
       if (typeof window !== "undefined") {
@@ -34,10 +41,6 @@ export default {
         });
       }
     }
-  },
-  beforeRouteUpdate(to, from, next) {
-    this.alignGridSomeImages();
-    next();
   },
   mounted() {
     this.alignGridSomeImages();

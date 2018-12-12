@@ -2,7 +2,7 @@
 
 ## MARIANO PEÑACOBA ORTIZ
 
-![penacoba](./images/penacoba.jpg)
+![mariano penacoba ortiz](./images/penacoba.jpg)
 
 Mariano es el **entrenador principal** del Club Triatlón Aguaverde. Aporta su experiencia profesional tanto en clubes de triatlon como entrenador personal.
 

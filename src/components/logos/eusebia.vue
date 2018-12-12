@@ -1,7 +1,6 @@
 <template>
 <span>
     <g-image alt="logo triatlon aguaverde" src="../../assets/images/eusebia.png" />
-
 </span>
 </template>
 <style scoped>
