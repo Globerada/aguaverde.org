@@ -52,8 +52,8 @@ export default {
         return;
       }
 
+      document.body.style.setProperty("overflow", "hidden");
       if (this.preventBackgroundScrolling) {
-        document.body.style.setProperty("overflow", "hidden");
         document.body.style.setProperty("max-height", "100vh");
       }
 
@@ -71,8 +71,8 @@ export default {
     this.$modal.$event.$on("hide", modal => {
       if (this.name === modal) {
         this.setHidden();
+        document.body.style.removeProperty("overflow");
         if (this.preventBackgroundScrolling) {
-          document.body.style.removeProperty("overflow");
           document.body.style.removeProperty("max-height");
         }
       }

@@ -34,7 +34,7 @@
       Hazte socio
     </g-link>
 
-    <a href="/foro" class="button plain">
+    <a target="_blank" rel="nofollow noopener" @click="openForum()" href class="button plain">
       Foro
     </a>
   </div>
@@ -49,7 +49,11 @@ export default {
       currentText: 0
     };
   },
-
+  methods: {
+    openForum() {
+      window.open("/foro", "_blank");
+    }
+  },
   mounted() {
     this._counter = setInterval(() => {
       this.currentText = (this.currentText + 1) % 6;
