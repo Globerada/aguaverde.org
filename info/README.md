@@ -1,4 +1,4 @@
-# Club Triatón Aguaverde
+# Club Triatlón Aguaverde
 
 Somos un club creado en 2004, gestionado y organizado a través de internet.
 
