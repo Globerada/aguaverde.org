@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     openForum() {
-      window.open("/foro", "_blank");
+      window.open("https://foro.aguaverde.org/", "_blank");
     }
   }
 };
