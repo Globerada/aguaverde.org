@@ -3,7 +3,7 @@
 
 Entrenamos la natación en la piscina del [polideportivo Marqués de Samaranch en Arganzuela](https://citymapper.com/go/s546f62y3y).
 
-![natación triatlón aguaverde](http://www.aguaverde.org/wp-content/uploads/2018/02/WhatsApp-Image-2017-09-03-at-18.18.16-1024x576.jpeg)
+![natación triatlón aguaverde](https://aguaverde.org/assets/static/piscina-w300.62f78f6d29d47f36bd6dfea9b7944b8c.jpg)
 
 ## Escríbenos
 
